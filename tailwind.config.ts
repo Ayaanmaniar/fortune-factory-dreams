@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				game: {
+					'blue': '#1a365d',
+					'gold': '#ffd700',
+					'green': '#10b981',
+					'light-blue': '#3b82f6',
+					'dark': '#0f172a',
+				},
+			},
+			fontFamily: {
+				'game': ['Poppins', 'sans-serif'],
+				'display': ['Montserrat', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +96,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
+				'pulse-gold': {
+					'0%, 100%': { boxShadow: '0 0 0 0 rgba(255, 215, 0, 0.4)' },
+					'50%': { boxShadow: '0 0 0 15px rgba(255, 215, 0, 0)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-gold': 'pulse-gold 2s infinite',
 			}
 		}
 	},
