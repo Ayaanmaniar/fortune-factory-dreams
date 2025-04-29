@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Coin, Star, Trophy } from 'lucide-react';
+import { Coins, Star, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 type Resource = {
@@ -12,7 +12,7 @@ type Resource = {
 
 const ResourcePanel = () => {
   const [resources, setResources] = useState<Resource[]>([
-    { name: 'Coins', value: 1000, icon: <Coin className="h-5 w-5" />, color: 'text-yellow-500' },
+    { name: 'Coins', value: 1000, icon: <Coins className="h-5 w-5" />, color: 'text-yellow-500' },
     { name: 'Stars', value: 5, icon: <Star className="h-5 w-5" />, color: 'text-blue-500' },
     { name: 'Trophies', value: 0, icon: <Trophy className="h-5 w-5" />, color: 'text-purple-500' },
   ]);

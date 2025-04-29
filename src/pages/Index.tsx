@@ -5,7 +5,7 @@ import HeroSection from '@/components/HeroSection';
 import GameInterface from '@/components/GameInterface';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { Check, ArrowRight, Heart, Gamepad, Coin } from 'lucide-react';
+import { Check, ArrowRight, Heart, Gamepad, Coins } from 'lucide-react';
 
 const Index = () => {
   const features = [
@@ -15,7 +15,7 @@ const Index = () => {
       description: "Build and manage your own virtual businesses. Start small, strategize, and expand your empire."
     },
     {
-      icon: <Coin className="h-8 w-8 text-game-gold" />,
+      icon: <Coins className="h-8 w-8 text-game-gold" />,
       title: "Real Economic Ecosystem",
       description: "Trade assets with real players, navigate market dynamics, and make strategic investments."
     },
